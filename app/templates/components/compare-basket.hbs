@@ -1,0 +1,13 @@
+{{#each product in comparison}}
+  <div class="product-icon">
+    <img class="product__image" src="images/{{product.picture}}" alt="Product {{product.id}}" />
+    <button class="action action--remove">
+      <i class="fa fa-remove"></i>
+      <span class="action__text action__text--invisible">Remove product</span>
+    </button>
+  </div>
+{{/each}}
+
+<button class="action action--button action--compare">
+  <i class="fa fa-check"></i><span class="action__text">Compare</span>
+</button>
