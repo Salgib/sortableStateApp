@@ -1,0 +1,23 @@
+{{#each product in products}}
+<div class="product">
+  <div class="product__info">
+    <img class="product__image" src="images/{{product.picture}}" alt="Product {{product.id}}" />
+    <h3 class="product__title">{{product.title}}</h3>
+    <span class="product__year extra highlight">{{product.year}}</span>
+    <span class="product__region extra highlight">{{product.region}}</span>
+    <span class="product__varietal extra highlight">{{product.variety}}</span>
+    <span class="product__alcohol extra highlight">{{product.alcohol}}</span>
+    <span class="product__price highlight">{{product.price}}</span>
+    <button class="action action--button action--buy">
+      <i class="fa fa-shopping-cart"></i>
+      <span class="action__text">Add to cart</span>
+    </button>
+  </div>
+  <label class="action action--compare-add">
+    <input class="check-hidden" type="checkbox" />
+    <i class="fa fa-plus"></i>
+    <i class="fa fa-check"></i>
+    <span class="action__text action__text--invisible">Add to compare</span>
+  </label>
+</div>
+{{/each}}
